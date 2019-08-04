@@ -1,0 +1,42 @@
+﻿<!--/// || simple drawer ex 2 GRAFICS           ||
+/// || Names : Asaf Louk & nidal nawatha & Gal Argov Sofer ||
+/// || Names : 311581144 & 308349109  & 302822622       ||
+/// ||               ||-->
+    <Window x:Class="ex1Grafics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ex1Grafics"
+        mc:Ignorable="d"
+        Title="Graphics Tool" Height="700" Width="700" Loaded="load" 
+        KeyDown="Menu_Choose_byuserinput"
+        SizeChanged="sizechaanged"
+       
+        
+        >
+    <Grid Margin="0,0,2,1">
+
+        <InkCanvas x:Name="canvas" MouseMove="Canvas_MouseMove" MouseUp="preview_mouseup" PreviewMouseLeftButtonDown="preview_mousedown" Margin="73,0,0,0" Cursor="Arrow"/>
+        <StackPanel HorizontalAlignment="Left" Height="820" VerticalAlignment="Top" Width="68" Background="#FF343B49">
+            <Label Content="Tool " Foreground="White" HorizontalAlignment="Left" FontFamily="Calibri" Width="68"/>
+            <Label Content="Graphics" Foreground="White" HorizontalAlignment="Left" FontFamily="Calibri" FontSize="9"/>
+            <Button Content="clean" Background="#FF343B49" Foreground="White" Height="61" RenderTransformOrigin="0.694,1.111" BorderBrush="#FF424853" Click="clean"/>
+            <Button Content="draw" Foreground="White" Background="#FF343B49" Height="28" RenderTransformOrigin="0.694,1.111" BorderBrush="#FF424853" Click="ddr"/>
+            <Button Content="paraalle" Foreground="White" Background="#FF343B49" Height="28" RenderTransformOrigin="0.694,1.111" BorderBrush="#FF424853" Click="visu1"/>
+            <Button Content="prespective" Foreground="White" Background="#FF343B49" Height="28" RenderTransformOrigin="0.694,1.111" BorderBrush="#FF424853" Click="visu_"/>
+            <Button Content="oblique" Foreground="White" Background="#FF343B49" Height="28" RenderTransformOrigin="0.694,1.111" BorderBrush="#FF424853" Click="visu2"/>
+            <Button Content="+" Foreground="White" Background="#FF343B49" Height="28" RenderTransformOrigin="0.694,1.111" BorderBrush="#FF424853" Click="plus"/>
+            <Button Content="-" Foreground="White" Background="#FF343B49" Height="28" RenderTransformOrigin="0.694,1.111" BorderBrush="#FF424853" Click="minu"/>
+            <TextBox IsEnabled="False"  x:Name="godel" Height="23" TextWrapping="Wrap" Text="1.2" TextChanged="draw_res2"/>
+            <TextBox x:Name="zavit" Height="23" TextWrapping="Wrap" Text="25"/>
+            <Button Content="rotate X" Foreground="White" Background="#FF343B49" Height="28" RenderTransformOrigin="0.694,1.111" BorderBrush="#FF424853" Click="rotate"/>
+            <Button Content="rotate Y" Foreground="White" Background="#FF343B49" Height="28" RenderTransformOrigin="0.694,1.111" BorderBrush="#FF424853" Click="rotate2"/>
+            <Button Content="rotate Z" Foreground="White" Background="#FF343B49" Height="28" RenderTransformOrigin="0.694,1.111" BorderBrush="#FF424853" Click="rotatez"/>
+            <Button Content="load again" Foreground="White" Background="#FF343B49" Height="28" RenderTransformOrigin="0.694,1.111" BorderBrush="#FF424853" Click="loadddd"/>
+        </StackPanel>
+        <Label x:Name="label" Content="l" HorizontalAlignment="Left" Foreground="WhiteSmoke" Margin="0,611,0,0" VerticalAlignment="Top" Width="68" Height="23"/>
+        <Label x:Name="label2" Content="l" HorizontalAlignment="Left" Foreground="WhiteSmoke" Margin="0,634,0,0" VerticalAlignment="Top" Width="68" Height="23"/>
+
+    </Grid>
+</Window>
